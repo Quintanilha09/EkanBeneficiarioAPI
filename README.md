@@ -5,11 +5,11 @@
 Após realizar a conexão é necessário iniciar a aplicação para que o JPA crie as tabelas.
 
 ## Endpoints
-http://localhost:8080/api/beneficiarios/listar
-http://localhost:8080/api/beneficiarios/cadastrar
-http://localhost:8080/api/beneficiarios/documentos/1352 <- id do beneficiário
-http://localhost:8080/api/beneficiarios/atualizar/1152 <- id do beneficiário
-http://localhost:8080/api/beneficiarios/excluir/1402 <- id do beneficiário
+#### http://localhost:8080/api/beneficiarios/listar
+#### http://localhost:8080/api/beneficiarios/cadastrar
+#### http://localhost:8080/api/beneficiarios/documentos/1352 <- id do beneficiário
+#### http://localhost:8080/api/beneficiarios/atualizar/1152 <- id do beneficiário
+#### http://localhost:8080/api/beneficiarios/excluir/1402 <- id do beneficiário
 
 ## URL para a documentação do Swagger
 http://localhost:8080/swagger-ui/swagger-ui/index.html
