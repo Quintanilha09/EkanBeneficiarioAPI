@@ -33,3 +33,16 @@ Após realizar a conexão é necessário iniciar a aplicação para que o JPA cr
 
 ![image](https://github.com/user-attachments/assets/1809c9bd-ef90-428e-8ce3-2edd15e7b88f)
 
+
+## Querys
+### Visualizar beneficiários e todos os seus documentos
+SELECT b.beneficiario_id, b.nome, b.telefone, b.data_nascimento, d.documento_id, d.tipo_documento, d.descricao
+FROM beneficiario b
+LEFT JOIN documento d ON b.beneficiario_id = d.beneficiario_id;
+
+### Visualizar todos os beneficiários
+select * from beneficiario
+
+### Visualizar todos os documentos
+select * from documento
+
