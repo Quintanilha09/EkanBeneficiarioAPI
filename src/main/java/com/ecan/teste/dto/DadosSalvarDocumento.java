@@ -4,7 +4,7 @@ import com.ecan.teste.model.TipoDocumentoEnum;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
-public record DocumentoDto(
+public record DadosSalvarDocumento(
 
         @NotBlank
         TipoDocumentoEnum tipoDocumento,

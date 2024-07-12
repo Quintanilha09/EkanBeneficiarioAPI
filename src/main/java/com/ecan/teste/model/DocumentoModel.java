@@ -8,6 +8,7 @@ import java.util.Date;
 @Entity
 @Table(name = "documento")
 public class DocumentoModel implements Serializable {
+
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -48,7 +49,6 @@ public class DocumentoModel implements Serializable {
         this.beneficiario = beneficiario;
     }
 
-
     public TipoDocumentoEnum getTipoDocumento() {
         return tipoDocumento;
     }
@@ -80,4 +80,5 @@ public class DocumentoModel implements Serializable {
     public void setDataAtualizacao(Date dataAtualizacao) {
         this.dataAtualizacao = dataAtualizacao;
     }
+
 }

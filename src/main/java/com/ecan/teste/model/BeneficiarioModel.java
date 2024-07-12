@@ -1,10 +1,11 @@
 package com.ecan.teste.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 @Table(name = "beneficiario")
@@ -34,7 +35,8 @@ public class BeneficiarioModel implements Serializable {
     private Date dataAtualizacao;
 
     @OneToMany(mappedBy = "beneficiario", cascade = CascadeType.ALL)
-    private Set<DocumentoModel> documentoModel;
+    @JsonManagedReference
+    private List<DocumentoModel> documentoModel;
 
     public Long getIdBeneficiario() {
         return beneficiarioId;
@@ -84,11 +86,12 @@ public class BeneficiarioModel implements Serializable {
         this.dataAtualizacao = dataAtualizacao;
     }
 
-    public Set<DocumentoModel> getDocumento() {
+    public List<DocumentoModel> getDocumento() {
         return documentoModel;
     }
 
-    public void setDocumento(Set<DocumentoModel> documentoModel) {
+    public void setDocumento(List<DocumentoModel> documentoModel) {
         this.documentoModel = documentoModel;
     }
+
 }
