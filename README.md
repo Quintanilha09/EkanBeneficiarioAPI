@@ -1,7 +1,7 @@
 # API Beneficiários Ekan
 
 ## Requerimentos para rodar a API
-É necessário fazer o download do Postgres e utilizar o PgAdmin para a persistência dos dados, é necessário criar um database antes que seja criada a tabela. A configuração para a conexão está no arquivo application.properties. 
+#### É necessário fazer o download do Postgres e utilizar o PgAdmin para a persistência dos dados, é necessário criar um database antes que seja criada a tabela. A configuração para a conexão está no arquivo application.properties. 
 Após realizar a conexão é necessário iniciar a aplicação para que o JPA crie as tabelas.
 
 ## Endpoints
