@@ -12,7 +12,7 @@ Após realizar a conexão é necessário iniciar a aplicação para que o JPA cr
 #### http://localhost:8080/api/beneficiarios/excluir/1402 <- id do beneficiário
 
 ## URL para a documentação do Swagger
-http://localhost:8080/swagger-ui/swagger-ui/index.html
+#### http://localhost:8080/swagger-ui/swagger-ui/index.html
 
 ## Exemplo de JSON para cadastar um beneficiário:
 {
